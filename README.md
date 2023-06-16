@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# CRUD APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="./gif/gif.gif" />
 
-## Available Scripts
 
-In the project directory, you can run:
+<p>Create Read Update Delete</p>
+<p>Oluştur Oku Düzenle Sil</p>
+<ul>
+    <li>
+        Projeye bootstrapı dahil et
+        > index.html bootstrap cdn ekle 
+    </li>
+    <li>
+        1- Yeni eklenecek elemanı almak için form oluştur:
+    form içerisinden gelen verileri al ve state aktar
+    ekle butonuna basıldığı anda forma girilen bilgilerle beraber yeni obje oluştur.
+    oluşan objeyi kitaplar isminde bir diziye aktar
+    obje oluşturlduktan sonra inputu sıfırla.
+    </li>
+    <li>
+        2- Books stateinde tutulan kitapları al ve map metodu şle listele(ekrana bas)
+        > eğer state boşssa ekrana "henüz kitap eklnemedi" yaz.
+        > BookCard bileşenine kitap bilgilerini prop olarak gönder.
+        > BookCard bileşenin kitapla ilgili bütün özellikleri göster.
+    </li>
+    <li>
+        3- Kitap Silme: 
+        > Herhangi bir kitabın sil butonuna basıldığında çalışan
+        fonksiyonun silinecek olanın id si gitsin
+        > Gelen id yi fonksiyona parametre olarak al
+        >Silinecek id ye eşit olmayan objeleri al ve bir diziye aktar.
+        > oluşan diziyi state aktar
+    </li>
 
-### `npm start`
+    <li>
+        4-Kitabı Okundu olarak işaretle:
+        > okundu butonuna basılınca çalışan fonksiyona kitabı gönder
+        > kitabın isRead değerini tersine çevir
+        > Dizi içerisinde değişecek olan elemanı bul
+        > o elemanı çıkar ve yenisini ekle
+    </li>
+    <li>
+        5- Düzenleme İşlemini Yap:
+        > düzenle butonuna tıklandığında ekraa bir modal çıksın
+        > ve düzenlenecek kitabı App.js e aktarsın (editItem)
+        > Modalda Kitap ismini değiştirmek için bir input
+        > İnpu her güncellendiğinde editItem değişkenini günceller ve App.je aktarır
+        > vazgeç butonu > Modalı Kapatır
+        > Kaydet Butonu > App.js de bulunan handleEditBook çalıştırır.
+        > Çalışan fonksiyon diziden eski elemanı çıkarır yerine yenisini koyar.
+    </li>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</ul>

@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.confirm-modal{
+  position: fixed;
+  background-color: rgba(46, 47, 49, 0.336);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 999;
+}
+
+.modal-inner{
+  background: white;
+  padding: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
